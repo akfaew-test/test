@@ -1,0 +1,10 @@
+merge:
+        whitelist:
+                labels: ["testlabel"]
+        blacklist:
+                labels: ["wip"]
+        method: squash
+        required_statuses:
+                - "auto-merge/test"
+                - "auto-merge/test-success"
+        delete_after_merge: true
